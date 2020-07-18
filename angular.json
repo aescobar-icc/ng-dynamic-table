@@ -25,13 +25,16 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "**/*", "input": "projects/ngx-dynamic-table/src/lib/dynamic-table/static/assets", "output": "./ngx-dynamic-table/assets/" }
+
             ],
             "styles": [
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "projects/ngx-dynamic-table/src/lib/dynamic-table/static/js/jquery.beauty.nestedfield.js"
             ]
           },
           "configurations": {

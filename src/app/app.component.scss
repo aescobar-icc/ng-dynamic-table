@@ -1,0 +1,14 @@
+::ng-deep .dt-table-nested-array td{
+    width: 30%;
+}
+.dt-table-nested-array{
+    border: solid 1px #ccc;
+    width: 100%;
+    height: 100%;
+}
+::ng-deep .dt-table-cell:nth-child(5){
+    width: 230px !important;
+}
+::ng-deep .dt-table-nested-array th:nth-child(3){
+    width:20px;
+}

@@ -1,8 +1,14 @@
 # NgxDynamicTable
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+This is a simple div based table with some great features
 
-## Code scaffolding
+> Note: This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+
+## Installing dependencies
+
+```sh
+$ npm install install jquery --save
+```
 
 Run `ng generate component component-name --project ngx-dynamic-table` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-dynamic-table`.
 > Note: Don't forget to add `--project ngx-dynamic-table` or else it will be added to the default project in your `angular.json` file. 

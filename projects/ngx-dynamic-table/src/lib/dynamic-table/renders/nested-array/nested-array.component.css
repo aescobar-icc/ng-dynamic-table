@@ -1,0 +1,12 @@
+.dt-table-nested-array{
+    border: solid 1px #ccc;
+    width: 100%;
+    height: 100%;
+}
+.dt-table-nested-array th{
+    width: 30%;
+    text-align: left;
+}
+.dt-table-nested-array td{
+    width: 30%;
+}

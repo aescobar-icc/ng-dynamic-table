@@ -1,0 +1,16 @@
+<table class="dt-table-nested-array">
+    <thead *ngIf="headers">
+        <tr>
+            <th *ngFor="let head of headers" >
+                {{head}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data">
+            <td *ngFor="let col of columns" >
+                {{item[col]}}
+            </td>
+        </tr>
+    </tbody>
+</table>

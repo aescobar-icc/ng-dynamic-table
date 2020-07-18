@@ -1,5 +1,27 @@
-<div class="dt-table">
-    <div class="dt-table-headers">
 
+
+<div class="dt-table" #dt_table>
+    <div class="dt-table-head" #dt_table_head>
+        
+    </div>
+    <div class="dt-table-body-wrapper" >
+        <div class="dt-table-body" #dt_table_body>
+            
+        </div>
     </div>
 </div>
+<div #dt_table_tr_template style="display: none;">
+    <div class="dt-table-tr"></div>
+</div>
+<div #dt_table_th_template style="display: none;">
+    <div class="dt-table-cell dt-table-th"></div>
+</div>
+<div #dt_table_td_template style="display: none;">
+    <div class="dt-table-cell dt-table-td"></div>
+</div>
+<div #dt_table_cell_renders >
+    <ng-template ngxDtTableCellRender></ng-template>
+    
+</div>
+
+<ngx-dt-nested-array  [data]="data[0].variants" [columns]="['sku','price','stock']"></ngx-dt-nested-array>

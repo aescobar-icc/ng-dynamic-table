@@ -1,0 +1,48 @@
+::ng-deep :root {
+    --dt-col-width: 20px;
+    --dt-cell-padding: 4px;
+    --dt-cell-text-align: 'center';
+    --dt-cell-overflow-x: hidden;
+}
+.dt-table-cell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dt-table-tr{
+    display: flex;
+    justify-content: space-around;
+}
+.dt-table-th{
+    width: var(--dt-col-width);
+    padding: var(--dt-cell-padding);
+    text-align: var(--dt-cell-text-align);
+    overflow-x: var(--dt-cell-overflow-x);
+    background-color: #ddd;
+
+}
+.dt-table-td{
+    width: var(--dt-col-width);
+    padding: var(--dt-cell-padding);
+    text-align: var(--dt-cell-text-align);
+    overflow-x: var(--dt-cell-overflow-x);
+    border-top:solid 1px #ccc ;
+}
+.dt-table-body-wrapper{
+    max-height: 400px;
+    overflow-y: scroll;
+
+}
+.dt-table-body-wrapper::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+.dt-table-body-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1); 
+}
+ 
+.dt-table-body-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+    background: #ccc;
+}
